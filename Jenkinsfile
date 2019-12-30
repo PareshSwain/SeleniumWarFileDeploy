@@ -45,7 +45,7 @@ stage('Deploy') {
                 echo 'deploying....'
 		withMaven(jdk: 'JDK1.8', maven: 'MAVEN') {
     		// some block
-        	//bat "mvn -Dmaven.test.failure.ignore=true tomcat7:deploy"
+        	bat "mvn -Dmaven.test.failure.ignore=true tomcat7:deploy"
         	}
 		}
 		}
